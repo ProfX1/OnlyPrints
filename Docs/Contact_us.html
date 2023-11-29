@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link href="../CSS/style.css" rel="stylesheet" media="screen">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<link rel="shortcut icon" href="../Images/Onlyprintswhite.png">
+		<link rel="apple-touch-icon" href="../Images/Onlyprintswhite.png">
+		<title>Contact us</title>
+	</head>
+	<body>
+	<header class="head">
+		<!--nav of webpage-->
+		
+			<div class="dropdown">
+				<img src="../Images/hamburgersWhite1.png" alt="menu">
+				<div class="dropdown-content">
+					<a href="../index.html">Home</a>
+					<a href="services.html">Services</a>
+					<a href="about_us.html">Meet the team</a>
+					<a href="contact_us.html">Contact Us</a>
+				</div>
+			</div>
+			<!--Slogan-->
+			<div class="slogan">
+				<h1><strong>OnlyPrints</strong></h1><h1 id="words">Where Ideas Take Shape In Every Layer!</h1>
+				<h2>Contact Us</h2>
+			</div>
+			<!--<div class="page3">
+				<a href="DOCS/page3.html">About us</a>
+			</div>
+			<div class="page4">
+				<a href="DOCS/contact_us.html">Contact Us</a>
+			</div>-->
+		<a href="../index.html"><img src="../Images/Onlyprintswhite.png" class="logo" alt="OnlyPrints"></a>
+		
+	</header>
+	<div class="headerimg">
+		<img width="100%" src="../Images/headerimg.jpeg">
+	</div>
+		<div class="contact_form">
+			<h1 class="red">Contact Us</h1>
+			<p> feel free to get in touch with us, we are always happy to hear from you. We are always happy to discuss about new projects, creative ideas or other opportunities to be part of your visions</p>
+			<p> contact us at <a href="mailto:info.onlyprints@gmail.com">Info.OnlyPrints@GMail.com</a></p>
+			<p>1-(665)-977-4687
+		</div>
+		<!--Contact us Form-->
+		<div class="contact_form">
+			<form action="mailto:info.onlyprints@gmail.com" name="contactform" method="post" enctype="multipart/form-data"><!-- CREATE action page!!!  - Dimitri-->
+				
+				<!--on va demander le email de l'utilisateur ici-->
+				<!--<label for="email">E-Mail : *</label>-->
+				<input type= "email" name="e_mail" id="email" placeholder="example@domain.com" required></input>
+				<br><br>
+				<!--demander les fichiers de l'utilisateur ici-->
+				<!--<label for="files">Your file(s) :</label>-->
+				<br>
+				<input type= "file" name="files[]" id="files" accept=".stl, image/*" multiple></input>
+				<br><br>
+				<!--demander si l'utilisateur a besoin d<une commande personalisée-->
+				<label>Do you need a custom order designed :</label>
+				<input type="radio" id="yes" name="custom" value="yes">
+				<label for="yes">Yes</label>
+				<input type="radio" id="no" name="custom" value="no">
+				<label for="no">No</label><br>
+				<br>
+				<!--demander plus d'information-->
+				<!--<label for="details">What do you need made and how is it supposed to work in the most detailed description* :</label>--><br>
+				<textarea id="details" rows="10" cols="50" placeholder="What do you need made and how is it supposed to work in the most detailed description *" name="userinput" required></textarea>
+				<br><br>
+				<!--quantity-->
+				<label for="qty">Amount :</label><br>
+				<input type="number" id="qty" min="1" max="99" placeholder="1" name="amount">
+				<br><br>
+				<!--ajouter à une liste de distribution-->
+				<label for="maillist">By checking this box you agree to be in our e-mail list</label><br>
+				<input type= "checkbox" id="maillist" name="mail_list"></input>
+				<br><br>
+				<!--reset/submit-->
+				<input type="reset"> 
+				<input type="submit" value="Send" name="Send">
+			</form>
+			<script>
+				function submit(e) {
+					e.preventDefault();
+				}
+			</script>
+		</div>
+	<footer>
+		<br>
+		<button>
+			<div>
+			<h1>Get Started Today!</h1>
+			<p>Ready to embark on your 3D printing journey? Contact us today to discuss your project, request a quote, or learn more about how OnlyPrints can meet your unique needs. 
+			Join the ranks of satisfied clients who have experienced the seamless integration of technology and creativity through our 3D printing services.</p>
+			<ul>
+				<li><a href="Docs/Contact_us.html" alt="Contact us">Contact us</a></li>
+				<li id="size">Moncton, NB</li>
+				<li><a href="https://cults3d.com/en/users/OnlyPrints/3d-models">Go see some of my designs</a></li>
+				<li><a href="mailto:info.onlyprints@gmail.com">Send Us an E-mail</a></li>
+				<li>Copyright &copy; Xavier Viel 2023</li>
+			</ul>
+			</div>
+		</button>
+		
+		<img src="../Images/HTML5.png" alt="html5 logo">
+		<img src="../Images/W3CCSS W3CXHTML1.0.png" alt="xhtml/css check W3c logo">
+	</footer>
+	</body>
+</html>
