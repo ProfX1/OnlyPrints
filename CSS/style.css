@@ -185,8 +185,8 @@ form{
 }
 
 @media screen
-and (min:500px)
-and (max:1000px) {
+and (min-width:500px)
+and (max-width:1000px) {
     .slogan #words{
         display: none;
     }
