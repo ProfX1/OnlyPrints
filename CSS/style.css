@@ -115,17 +115,18 @@ h2{
     font-size:0.8em;
     color:white;
 }
-button{
+.button{
     position:relative;
     top:15em;
     left:5%;
     right:5%;
     border-radius: 25px;
-    background-color:#99A3A4;
+    background-color:rgba(153, 163, 164, 0.95);
     color:white;
+    padding:1em;
     
 }
-button a{
+.button a{
     color:white;
 }
 ul{
@@ -174,7 +175,7 @@ ul{
 .easteregg:hover{
     content:url("../Images/Snowden1.jpg");
 }
-footer button img{
+footer .button img{
     position:relative;
     bottom:0px;
     left:0px;
