@@ -247,6 +247,7 @@ and (min-width:1921px)
 and (max-width:10000px) {
     .headerimg{
         content:url("../Images/headerimg4.jpg");
+        /*<a href="https://www.freepik.com/free-photo/fuji-mountain-with-milky-way-night_10695684.htm#query=4k%20wallpaper&position=27&from_view=keyword&track=ais&uuid=a4e3cbe5-dbf2-4b6f-b178-8051ef247a72">Image by tawatchai07</a> on Freepik*/
     }
     
 }
