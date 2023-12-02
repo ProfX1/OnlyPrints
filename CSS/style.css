@@ -184,7 +184,7 @@ form{
 
 @media only screen
 and (min-width:0px)
-and (max-width:1020px) {
+and (max-width:750px) {
     #words{
         display: none;
     }
