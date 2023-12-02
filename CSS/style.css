@@ -4,6 +4,7 @@ body{
     width:90%;
     font-family:Arial;
     font-size:1.5em;
+
     
 }
 a{
@@ -18,6 +19,10 @@ a{
     top:0px;
     left:0px;
     z-index: 1;
+}
+.slogan{
+    position:relative;
+    top:0px;
 }
 .dropdown{
     position:relative;
@@ -40,18 +45,20 @@ a{
     height:30px;
 }
 .dropdown img:hover{
-    content:url("../Images/hamburgersWhite2.png")
+    content:url("../Images/hamburgersWhite2.png");
 }
 .dropdown-content{
     display:none;
     position:absolute;
     background-color:white;
-    top:75px;
-    left:20px;
+    top:70px;
+    left:40px;
     min-width:50px;
     max-width: 100px;
     z-index:1;
     border-radius:10px ;
+    padding:1em;
+    
 }
 
 
@@ -59,10 +66,7 @@ a{
     display:inline-block;
     
 }
-#words{
-    padding:1em;;
-    margin:1em;
-}
+
 .logo{
     width:150px;
     height:150px;
@@ -73,29 +77,39 @@ a{
 .headerimg{
     position:fixed;
     background-size: cover;
-    right:0px;
+    left:0px;
     z-index:-1;
     
 }
 .sub{
-    
+    position: relative;
     background-color:rgba(153, 163, 164, 0.95);
     color:white;
     border-radius: 25px;
+    left:5%;
+    top:170px;
 }
 .sub a{
     color:white;
 }
 .sub1{
-    display:flex;
+    position:relative;
+    display:block;
     background-color:rgba(153, 163, 164, 0.95);
     flex-wrap:wrap;
     border-radius: 25px;
+    left:5%;
+    top:170px;
+    text-align: center;
+    align-items: center;
+}
+.sub1 h1{
+    margin:1em;
+    padding:1em;
 }
 h1{
     font-size:1em;
     color:white;
-    
 }
 h2{
     font-size:0.8em;
@@ -119,14 +133,23 @@ ul{
 }
 
 .video{
-    display:inline-flex;
+    display:flex;
     flex-wrap:wrap;
+    justify-content: center;
 }
 .videos{
-    width:100%;
     margin:1em;
     padding:1em;
-
+}
+.shorts{
+    width:450px;
+    height:800px;
+}
+.full{
+    
+    margin:1em;
+    width:800px;
+    height:400px;
 }
 .employees{
     margin:1em;
@@ -149,7 +172,7 @@ ul{
     border-radius: 10px;
 }
 .easteregg:hover{
-    content:url("../Images/Snowden1.jpg")
+    content:url("../Images/Snowden1.jpg");
 }
 footer button img{
     position:relative;
@@ -187,6 +210,42 @@ and (min-width:0px)
 and (max-width:750px) {
     #words{
         display: none;
+    }
+    
+}
+@media only screen
+and (min-width:1201px)
+and (max-width:1480px) {
+    .headerimg{
+        content:url("../Images/headerimg2.jpeg");
+        position:fixed;
+        background-size: cover;
+        left:0px;
+        z-index:-1;
+    }
+    
+}
+@media only screen
+and (min-width:901px)
+and (max-width:1200px) {
+    .headerimg{
+        content:url("../Images/headerimg3.jpeg");
+    }
+    
+}
+@media only screen
+and (min-width:0px)
+and (max-width:900px) {
+    .headerimg{
+        content:url("../Images/headerimg1.jpeg");
+    }
+    
+}
+@media only screen
+and (min-width:1921px)
+and (max-width:10000px) {
+    .headerimg{
+        content:url("../Images/headerimg4.jpg");
     }
     
 }
