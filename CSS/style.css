@@ -59,9 +59,6 @@ a{
     display:inline-block;
     
 }
-.slogan{
-    
-}
 .words{
     padding:1em;;
     margin:1em;
@@ -156,14 +153,12 @@ ul{
 .easteregg:hover{
     content:url("../Images/Snowden1.jpg")
 }
-footer img{
-    width:;
-    height:;
-    position:;
-    top:;
-    bottom:;
-    right:;
-    left:;
+footer button img{
+    position:relative;
+    bottom:0px;
+    left:0px;
+    
+
     
 }
 .red{
@@ -186,5 +181,14 @@ footer img{
 }
 form{
     display:block;   
+    
+}
+
+@media screen
+and (min:500px)
+and (max:1000px) {
+    .slogan #words{
+        display: none;
+    }
     
 }
