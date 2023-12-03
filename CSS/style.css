@@ -88,6 +88,8 @@ a{
     border-radius: 25px;
     left:5%;
     top:170px;
+    padding:1em;
+    margin:1em;
 }
 .sub a{
     color:white;
@@ -219,10 +221,7 @@ and (min-width:1201px)
 and (max-width:1480px) {
     .headerimg{
         content:url("../Images/headerimg2.jpeg");
-        position:fixed;
-        background-size: cover;
-        left:0px;
-        z-index:-1;
+        
     }
     
 }
