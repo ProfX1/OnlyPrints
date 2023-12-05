@@ -20,10 +20,10 @@ a{
     left:0px;
     z-index: 1;
 }
-.slogan{
+/*.slogan{
     position:relative;
     top:0px;
-}
+}*/
 .dropdown{
     position:relative;
     display:block;
