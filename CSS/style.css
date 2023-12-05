@@ -4,6 +4,7 @@ body{
     width:90%;
     font-family:Arial;
     font-size:1.5em;
+
     
 }
 a{
@@ -19,6 +20,44 @@ a{
     left:0px;
     z-index: 1;
 }
+.slogan{
+    position:relative;
+    top:0px;
+}
+/*
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+  }
+   
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: solid 1px black;
+  }
+   
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+   
+.dropdown-content a:hover {background-color:   darkgray;} 
+   
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+   
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }*/
 .dropdown{
     position:relative;
     display:block;
@@ -40,18 +79,20 @@ a{
     height:30px;
 }
 .dropdown img:hover{
-    content:url("../Images/hamburgersWhite2.png")
+    content:url("../Images/hamburgersWhite2.png");
 }
 .dropdown-content{
     display:none;
     position:absolute;
     background-color:white;
-    top:75px;
-    left:20px;
+    top:70px;
+    left:40px;
     min-width:50px;
     max-width: 100px;
-    z-index:1;
+    z-index:2;
     border-radius:10px ;
+    padding:1em;
+    
 }
 
 
@@ -59,86 +100,91 @@ a{
     display:inline-block;
     
 }
-.slogan{
-    
-}
-.words{
-    padding:1em;;
-    margin:1em;
-}
+
 .logo{
     width:150px;
     height:150px;
     position:fixed;
     top:10px;
-    bottom:;
-    left:;
     right:10px;
 }
 .headerimg{
     position:fixed;
     background-size: cover;
-    right:0px;
+    left:0px;
     z-index:-1;
     
 }
 .sub{
-    
+    position: relative;
     background-color:rgba(153, 163, 164, 0.95);
     color:white;
     border-radius: 25px;
+    left:5%;
+    top:170px;
 }
 .sub a{
     color:white;
 }
 .sub1{
-    display:flex;
+    position:relative;
+    display:block;
     background-color:rgba(153, 163, 164, 0.95);
     flex-wrap:wrap;
     border-radius: 25px;
+    left:5%;
+    top:170px;
+    text-align: center;
+    align-items: center;
+}
+.sub1 h1{
+    margin:1em;
+    padding:1em;
 }
 h1{
     font-size:1em;
     color:white;
-    
 }
 h2{
     font-size:0.8em;
     color:white;
 }
-button{
+.button{
     position:relative;
     top:15em;
     left:5%;
     right:5%;
     border-radius: 25px;
-    background-color:#99A3A4;
+    background-color:rgba(153, 163, 164, 0.95);
     color:white;
+    padding:1em;
     
 }
-button a{
+.button a{
     color:white;
 }
 ul{
     list-style-type:none;
 }
 
-}
-#sub-title1{
-
-}
-#sub_title2{
-    
-}
 .video{
-    display:inline-flex;
+    display:flex;
     flex-wrap:wrap;
+    justify-content: center;
 }
 .videos{
-    width:100%;
     margin:1em;
     padding:1em;
-
+}
+.shorts{
+    width:450px;
+    height:800px;
+}
+.full{
+    
+    margin:1em;
+    width:800px;
+    height:400px;
 }
 .employees{
     margin:1em;
@@ -161,16 +207,14 @@ ul{
     border-radius: 10px;
 }
 .easteregg:hover{
-    content:url("../Images/Snowden1.jpg")
+    content:url("../Images/Snowden1.jpg");
 }
-footer img{
-    width:;
-    height:;
-    position:;
-    top:;
-    bottom:;
-    right:;
-    left:;
+footer .button img{
+    position:relative;
+    bottom:0px;
+    left:0px;
+    
+
     
 }
 .red{
@@ -193,5 +237,51 @@ footer img{
 }
 form{
     display:block;   
+    
+}
+
+@media only screen
+and (min-width:0px)
+and (max-width:750px) {
+    #words{
+        display: none;
+    }
+    
+}
+@media only screen
+and (min-width:1201px)
+and (max-width:1480px) {
+    .headerimg{
+        content:url("../Images/headerimg2.jpeg");
+        position:fixed;
+        background-size: cover;
+        left:0px;
+        z-index:-1;
+    }
+    
+}
+@media only screen
+and (min-width:901px)
+and (max-width:1200px) {
+    .headerimg{
+        content:url("../Images/headerimg3.jpeg");
+    }
+    
+}
+@media only screen
+and (min-width:0px)
+and (max-width:900px) {
+    .headerimg{
+        content:url("../Images/headerimg1.jpeg");
+    }
+    
+}
+@media only screen
+and (min-width:1921px)
+and (max-width:10000px) {
+    .headerimg{
+        content:url("../Images/headerimg4.jpg");
+        /*<a href="https://www.freepik.com/free-photo/fuji-mountain-with-milky-way-night_10695684.htm#query=4k%20wallpaper&position=27&from_view=keyword&track=ais&uuid=a4e3cbe5-dbf2-4b6f-b178-8051ef247a72">Image by tawatchai07</a> on Freepik*/
+    }
     
 }
