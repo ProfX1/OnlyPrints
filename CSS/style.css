@@ -4,7 +4,7 @@ body{
     width:90%;
     font-family:Arial;
     font-size:1.5em;
-
+    
     
 }
 a{
@@ -180,33 +180,40 @@ ul{
 footer .button img{
     position:relative;
     bottom:0px;
-    left:0px;
-    
-
-    
+    left:0px; 
 }
 .red{
     color:red;
     font-size:1.5em;
 
 }
+#contact{
+    display:inline-flex;
+    margin:1em;
+    position:relative;
+    left:5%;
+    flex-wrap: wrap;
+    justify-content:center;
+}
 .contact_form{
     position:relative;
     top:200px;
     margin:1em;
     display:inline-flex;
-    width:45%;
+    width:40%;
     flex-wrap: wrap;
     color:white;
     background-color:rgba(153, 163, 164, 0.95);
     border-radius: 25px;
-    
-    
+    padding:1em;
+    justify-content: center;
 }
 form{
-    display:block;   
+    display:block;
+    justify-content: center;
     
 }
+
 
 @media only screen
 and (min-width:0px)
@@ -231,7 +238,9 @@ and (max-width:1200px) {
     .headerimg{
         content:url("../Images/headerimg3.jpeg");
     }
-    
+    .contact_form{
+        width:100%;
+    }
 }
 @media only screen
 and (min-width:0px)
@@ -240,6 +249,9 @@ and (max-width:900px) {
         content:url("../Images/headerimg1.jpeg");
     }
     
+    .contact_form{
+        width:100%;
+    }
 }
 @media only screen
 and (min-width:1921px)
