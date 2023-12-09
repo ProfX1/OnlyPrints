@@ -1,16 +1,17 @@
+/*d/finir la fonte*/
 body{
     text-align: center;
     background-color:#5D6D7E;
     width:90%;
     font-family:Arial;
-    font-size:1.5em;
-    
-    
+    font-size:1.5em; 
 }
+/*enlever la ligne du a*/
 a{
     text-decoration: none;
     
 }
+/*positionnement de la barre du dessus qui va rester à la même place en tout temps*/
 .head{
     position:fixed;
     background-color:#5D6D7E;
@@ -20,10 +21,7 @@ a{
     left:0px;
     z-index: 1;
 }
-/*.slogan{
-    position:relative;
-    top:0px;
-}*/
+/*menu qui descent au lieu d'avoir un menu qui montre tout du début*/
 .dropdown{
     position:relative;
     display:block;
@@ -66,7 +64,7 @@ a{
     display:inline-block;
 
 }
-
+/*positionnement de mon logo d'entreprise*/
 .logo{
     width:150px;
     height:150px;
@@ -74,13 +72,14 @@ a{
     top:10px;
     right:10px;
 }
+/*positionnement de mon background avec une image*/
 .headerimg{
     position:fixed;
     background-size: cover;
     left:0px;
     z-index:-1;
-    
 }
+/*style pour les boîtes de texte*/
 .sub{
     position: relative;
     background-color:rgba(153, 163, 164, 0.95);
@@ -91,9 +90,11 @@ a{
     padding:1em;
     margin:1em;
 }
+
 .sub a{
     color:white;
 }
+/*positionnement pour les boîtes qui contiennent des vidéos*/
 .sub1{
     position:relative;
     display:block;
@@ -109,6 +110,7 @@ a{
     margin:1em;
     padding:1em;
 }
+/*donner une couleur et une grosseur aux balises h1 et h2*/
 h1{
     font-size:1em;
     color:white;
@@ -117,6 +119,7 @@ h2{
     font-size:0.8em;
     color:white;
 }
+/*positionnement pour le footer*/
 .button{
     position:relative;
     top:15em;
@@ -134,26 +137,30 @@ h2{
 ul{
     list-style-type:none;
 }
-
+/*positionnement des vidéos dans le sub1*/
 .video{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
 }
+/*donner un espacement entre les vidéos*/
 .videos{
     margin:1em;
     padding:1em;
 }
+/*démontrer la size pour les vidéos de type shorts*/
 .shorts{
     width:450px;
     height:800px;
 }
+/*démontrer la size pour les vidéos normaux*/
 .full{
     
     margin:1em;
     width:800px;
     height:400px;
 }
+/*comment les div sont arragées pour les employés*/
 .employees{
     margin:1em;
     position:relative;
@@ -177,16 +184,19 @@ ul{
 .easteregg:hover{
     content:url("../Images/Snowden1.jpg");
 }
+/*positionnement du logo html/css*/
 footer .button img{
     position:relative;
     bottom:0px;
     left:0px; 
 }
+/*un petit flare rouge dans le contact*/
 .red{
     color:red;
     font-size:1.5em;
 
 }
+/*positionnement du contact, des mots*/
 #contact{
     display:inline-flex;
     margin:1em;
@@ -195,6 +205,7 @@ footer .button img{
     flex-wrap: wrap;
     justify-content:center;
 }
+/*positionnement de la div qui va contenir la form*/
 .contact_form{
     position:relative;
     top:200px;
@@ -208,13 +219,13 @@ footer .button img{
     padding:1em;
     justify-content: center;
 }
+/*display de la form*/
 form{
     display:block;
     justify-content: center;
     
 }
-
-
+/*site web adaptatif, changement d'images, enlàvement de certaines parties pour que le site aie l'air plus beau et pour prévenir la majorité des overlaps de texte/images*/
 @media only screen
 and (min-width:0px)
 and (max-width:750px) {
@@ -258,6 +269,7 @@ and (min-width:1921px)
 and (max-width:10000px) {
     .headerimg{
         content:url("../Images/headerimg4.jpg");
+        /*référence pour mon image de background en 4k*/
         /*<a href="https://www.freepik.com/free-photo/fuji-mountain-with-milky-way-night_10695684.htm#query=4k%20wallpaper&position=27&from_view=keyword&track=ais&uuid=a4e3cbe5-dbf2-4b6f-b178-8051ef247a72">Image by tawatchai07</a> on Freepik*/
     }
     
